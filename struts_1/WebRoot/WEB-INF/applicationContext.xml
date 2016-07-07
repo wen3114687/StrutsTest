@@ -11,4 +11,24 @@
 		<property name="configLocation"
 			value="/WEB-INF/hibernate.cfg.xml">
 		</property>
+	</bean>
+	<bean id="InterfaceDAO" class="com.wbl.dao.InterfaceDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="UserDAO" class="com.wbl.dao.UserDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="ChannelDAO" class="com.wbl.dao.ChannelDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="SmsDAO" class="com.wbl.dao.SmsDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
 	</bean></beans>

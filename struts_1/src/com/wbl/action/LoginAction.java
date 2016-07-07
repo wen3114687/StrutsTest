@@ -1,8 +1,8 @@
 package com.wbl.action;
 
-import com.opensymphony.xwork2.ActionSupport;
 
-public class LoginAction extends ActionSupport{
+
+public class LoginAction extends BaseAction{
 	
 	/**
 	 * 
@@ -12,6 +12,7 @@ public class LoginAction extends ActionSupport{
 	@Override
 	public String execute() throws Exception {
 		if(this.username.equals("admin")&&this.password.equals("1234")){
+			request.setAttribute("loginInfo", "µÇÂ¼³É¹¦");
 			return SUCCESS;
 		}else{
 			return INPUT;
