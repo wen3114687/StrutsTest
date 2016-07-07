@@ -1,4 +1,4 @@
-package com.wbl.login.action;
+package com.wbl.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 
