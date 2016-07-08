@@ -25,22 +25,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body style="background: #e3e3e3">
 	<ul class="menu">
 		接口管理
-		<li class="submenu"><a href="<%=basePath%>/pages/sms/interface/interface.jsp" target="center">短信接口列表</a></li>
+		<li class="submenu"><a href="<%=basePath%>pages/sms/interface/interface.jsp" target="center">短信接口列表</a></li>
 	</ul>
 	<ul class="menu">
 		通道管理
-		<li class="submenu"><a href="<%=basePath%>/pages/sms/channal/channal.jsp" target="center">短信通道列表</a></li>
+		<li class="submenu"><a href="<%=basePath%>pages/sms/channal/channal.jsp" target="center">短信通道列表</a></li>
 	</ul>
 	<ul class="menu">
 		用户管理
-		<li class="submenu"><a href="<%=basePath%>/pages/sms/user/userManage.jsp" target="center">用户管理</a></li>
+		<li class="submenu"><a href="<%=basePath%>pages/sms/user/userManage.jsp" target="center">用户管理</a></li>
 	</ul>
 	<ul class="menu">
 		短信管理
-		<li class="submenu"><a href="<%=basePath%>/pages/sms/message/sendMessage.jsp" target="center">发送短信</a></li>
-		<li class="submenu"><a href="<%=basePath%>/pages/sms/message/downMessage.jsp" target="center">下行短信管理</a></li>
-		<li class="submenu"><a href="<%=basePath%>/pages/sms/message/upMessage.jsp" target="center">上行短信管理</a></li>
-		<li class="submenu"><a href="<%=basePath%>/pages/sms/message/messageCount.jsp" target="center">短信统计</a></li>
+		<li class="submenu"><a href="<%=basePath%>pages/sms/message/sendMessage.jsp" target="center">发送短信</a></li>
+		<li class="submenu"><a href="<%=basePath%>pages/sms/message/downMessage.jsp" target="center">下行短信管理</a></li>
+		<li class="submenu"><a href="<%=basePath%>pages/sms/message/upMessage.jsp" target="center">上行短信管理</a></li>
+		<li class="submenu"><a href="<%=basePath%>pages/sms/message/messageCount.jsp" target="center">短信统计</a></li>
 	</ul>
 </body>
 </html>

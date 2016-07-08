@@ -14,18 +14,24 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-  </head>
+
+</head>
   
   <body>
     <s:form action="checkLogin" namespace="/login" method="post">
+   		<p id="loginInfo" style="display: none;"><s:property value="#session.loginInfo"/></p>
     	<s:textfield name="username" label="用户名"></s:textfield>
     	<s:password name="password" label="密码"></s:password>
     	<s:submit value="提交"></s:submit>
     </s:form>
   </body>
+<script type="text/javascript">
+	var msg = document.getElementById("loginInfo").innerHTML;
+	if (msg != "") {
+		alert(msg);
+	}
+</script>
 </html>

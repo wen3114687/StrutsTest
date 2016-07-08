@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -9,20 +10,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'userManage.jsp' starting page</title>
-    
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
-
+	<script type="text/javascript">
+		function submit(){
+			window.open("<%=basePath%>/pages/sms/user/userManage.jsp","_self");
+		}
+	</script>
   </head>
-  
+  	
   <body>
-    usermanager. <br>
+  
+  	<div class="tab">
+		<input type="button" onclick="submit()" value="提交">
+	</div>
+  	<div class="content">2</div>
   </body>
 </html>

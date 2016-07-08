@@ -91,6 +91,24 @@ public class UserDAO extends HibernateDaoSupport {
 			throw re;
 		}
 	}
+	public boolean isExist(String username,String password){
+		log.debug("finding User instance with username: " + username
+				+ ", password: " + password);
+		try {
+			String queryString = "from User as model where model.name= ?  and model.password=?";
+			
+			List userlist=getHibernateTemplate().find(queryString,new String[]{username,password});
+			if (userlist.isEmpty()) {
+				return false;
+			}else {
+				return true;
+			}
+		} catch (RuntimeException re) {
+			log.error("find by property name failed", re);
+			throw re;
+		}
+		
+	}
 
 	public List findByName(Object name) {
 		return findByProperty(NAME, name);
