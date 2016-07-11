@@ -1,8 +1,12 @@
 package com.wbl.dao;
 
+import hibernateFactory.HibernateSessionFactory;
+
 import java.util.List;
 
 import org.hibernate.LockMode;
+import org.hibernate.Query;
+import org.hibernate.Session;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
@@ -96,7 +100,6 @@ public class UserDAO extends HibernateDaoSupport {
 				+ ", password: " + password);
 		try {
 			String queryString = "from User as model where model.name= ?  and model.password=?";
-			
 			List userlist=getHibernateTemplate().find(queryString,new String[]{username,password});
 			if (userlist.isEmpty()) {
 				return false;

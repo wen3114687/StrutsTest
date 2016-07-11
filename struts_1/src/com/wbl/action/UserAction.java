@@ -5,27 +5,38 @@ import com.wbl.pojo.User;
 
 public class UserAction extends BaseAction {
 	
-	private User user;
 	private Integer id;
+	private String name;
+	private String password;
 	
 	UserDAO userdao=UserDAO.getFromApplicationContext(ctx);
 	
 	
 	
-	public void saveUser(User user){
-		
-		//ÒµÎñÂß¼­
-		
+	public String registUser(){
+		User user =new User();
+		user.setName(getName());
+		user.setPassword(getPassword());
 		userdao.save(user);
-	}
-
-
-
-	public User getUser() {
-		return user;
-	}
-	public void setUser(User user) {
-		this.user = user;
+		return SUCCESS;
 	}
 	
+	public String logOut(){
+		
+		return SUCCESS;
+	}
+	
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 }

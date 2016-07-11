@@ -24,6 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
    	    <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+   	    
         <tr>
             <td colspan="3" height="100"  >
 				<iframe height="100%" width="100%" frameborder="0" src="pages/layout/top.jsp"
@@ -48,4 +49,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </tr>
     </table>
   </body>
+  <script type="text/javascript">
+  		
+  </script>
 </html>

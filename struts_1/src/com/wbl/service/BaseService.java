@@ -1,21 +1,15 @@
-package com.wbl.action;
+package com.wbl.service;
 
 import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 
 import org.apache.struts2.ServletActionContext;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
 
-import com.opensymphony.xwork2.ActionSupport;
+import com.wbl.dao.UserDAO;
 
-public class BaseAction extends ActionSupport{
-	
-	public HttpServletRequest request=ServletActionContext.getRequest();
-	public HttpSession session=request.getSession();
+public class BaseService {
 	public ServletContext application=ServletActionContext.getServletContext();
 	public  ApplicationContext ctx  = WebApplicationContextUtils.getRequiredWebApplicationContext(application);
-    
-
+	UserDAO userdao=UserDAO.getFromApplicationContext(ctx);
 }

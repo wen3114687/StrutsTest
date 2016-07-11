@@ -1,5 +1,5 @@
 #MyEclipse Hibernate Properties
-#Thu Jul 07 17:57:06 CST 2016
+#Mon Jul 11 11:13:01 CST 2016
 genBasicCompId=false
 sessionFactoryName=hibernateXML.HibernateSessionFactory
 profile=
@@ -15,6 +15,6 @@ genVersionTag=false
 sessionFactoryId=
 basePersistenceClass=
 genAnnotations=false
-reSettingsFile=
+reSettingsFile=/struts_1/WebRoot/WEB-INF/hibernate.reveng.xml
 configFile=/struts_1/src/hibernateXML/hibernate.cfg.xml
 createConfigFile=true

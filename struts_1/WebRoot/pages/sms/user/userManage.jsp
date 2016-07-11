@@ -23,8 +23,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
   
   	<div class="tab">
-		<input type="button" onclick="submit()" value="提交">
+	
 	</div>
-  	<div class="content">2</div>
+  	<div class="content">
+		<s:form action="registUser" method="post" namespace="/regist">
+			<s:textfield label="用户" name="name"></s:textfield>
+			<s:password label="密码" name="password"></s:password>
+			<s:submit value ="提交"></s:submit>
+		</s:form>
+	
+	</div>
   </body>
 </html>

@@ -12,7 +12,6 @@
         <property name="connection.password">sa</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="myeclipse.connection.profile">localhost</property>
-        <property name="connection.autocommit">true </property>
     	<mapping resource="com/wbl/pojo/User.hbm.xml"/>
     	<mapping resource="com/wbl/pojo/Interface.hbm.xml"/>
     	<mapping resource="com/wbl/pojo/Sms.hbm.xml"/>

@@ -1,5 +1,6 @@
 package com.wbl.service;
 
-public class LoginService {
-
+public interface LoginService {
+	
+	public void isExist();
 }
