@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -23,6 +24,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    sendmessage <br>
+    <s:form action="sendMessage" namespace="/sendMessage">
+    	<s:textarea name="reciveNum" label="接收人"></s:textarea>
+    	<s:textarea name="content" label="短信内容"></s:textarea>
+    </s:form>
   </body>
 </html>

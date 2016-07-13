@@ -1,4 +1,5 @@
 /com/
-/hibernateFactory/
+/springXML/
+/log4j.properties
 /strutsXML/
-/hibernateXML/
+/Dev.log

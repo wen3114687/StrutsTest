@@ -8,16 +8,12 @@ public class LoginAction extends BaseAction{
 	public String username;
 	public String password;
 	
-	
-	
-	/**
-	 * 
-	 */
+
 	UserDAO userdao=UserDAO.getFromApplicationContext(ctx);
 	private static final long serialVersionUID = 1L;
 	
-	@Override
-	public String execute() throws Exception {
+	
+	public String login() throws Exception {
 		
 		if(userdao.isExist(this.getUsername(), this.getPassword())){
 			session.setAttribute("userInfo", "ÓÃ»§Ãû");
@@ -29,6 +25,10 @@ public class LoginAction extends BaseAction{
 		}
 	}
 	
+	public String logOut(){
+		session.removeAttribute("userInfo");
+		return SUCCESS;
+	}
 	
 	
 	

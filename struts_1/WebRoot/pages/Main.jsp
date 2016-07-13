@@ -27,6 +27,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    	    
         <tr>
             <td colspan="3" height="100"  >
+            	<input type="button" onclick="logOut()" value="退出"></input>
 				<iframe height="100%" width="100%" frameborder="0" src="pages/layout/top.jsp"
                     name="leftFrame"></iframe>
 			</td>
@@ -50,6 +51,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     </table>
   </body>
   <script type="text/javascript">
-  		
+  		function logOut(){
+  			window.open("<%=path %>/index.jsp","_self");
+  		}
   </script>
 </html>

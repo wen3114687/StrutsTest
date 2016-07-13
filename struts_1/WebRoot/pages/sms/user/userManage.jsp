@@ -3,6 +3,8 @@
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+ArrayList userlist=(ArrayList)request.getAttribute("userlist");
+System.out.println(userlist);
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -26,12 +28,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
 	</div>
   	<div class="content">
-		<s:form action="registUser" method="post" namespace="/regist">
+		<s:form action="registUser" method="post" namespace="/registUser">
 			<s:textfield label="用户" name="name"></s:textfield>
 			<s:password label="密码" name="password"></s:password>
 			<s:submit value ="提交"></s:submit>
 		</s:form>
-	
 	</div>
   </body>
 </html>

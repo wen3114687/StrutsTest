@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
-	<package name="userAction" extends="struts-default" namespace="/registUser">
-			<action name="registUser" class="com.wbl.action.UserAction"  method="registUser">
+	<package name="smsAction" extends="struts-default" namespace="/regist">
+		<action name="registUser" class="com.wbl.action.UserAction"  method="registUser">
 			<result name="success">/pages/sms/user/suc.jsp</result>
 		</action>
 	</package>
