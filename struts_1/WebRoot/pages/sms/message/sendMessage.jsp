@@ -27,6 +27,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <s:form action="sendMessage" namespace="/sendMessage">
     	<s:textarea name="reciveNum" label="接收人"></s:textarea>
     	<s:textarea name="content" label="短信内容"></s:textarea>
+    	<s:submit value="发送"></s:submit>
     </s:form>
   </body>
 </html>
