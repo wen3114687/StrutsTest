@@ -3,4 +3,5 @@
 <struts>
 	<include file="strutsXML/login.xml"></include>
 	<include file="strutsXML/userAction.xml"></include>
+	<include file="strutsXML/smsAction.xml"></include>
 </struts>    

@@ -8,7 +8,7 @@
     <class name="com.wbl.pojo.Sms" table="sms" catalog="sms">
         <id name="id" type="java.lang.String">
             <column name="id" length="32" />
-            <generator class="assigned" />
+            <generator class="uuid" />
         </id>
         <property name="code" type="java.lang.String">
             <column name="code" length="100" />

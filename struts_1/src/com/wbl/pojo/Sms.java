@@ -1,6 +1,7 @@
 package com.wbl.pojo;
 
 import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  * Sms entity. @author MyEclipse Persistence Tools
@@ -20,9 +21,9 @@ public class Sms implements java.io.Serializable {
 	private String status;
 	private String result;
 	private String remark;
-	private Timestamp reciveTime;
-	private Timestamp sendTime;
-	private Timestamp feedbackTime;
+	private Date reciveTime;
+	private Date sendTime;
+	private Date feedbackTime;
 
 	// Constructors
 
@@ -142,27 +143,27 @@ public class Sms implements java.io.Serializable {
 		this.remark = remark;
 	}
 
-	public Timestamp getReciveTime() {
+	public Date getReciveTime() {
 		return this.reciveTime;
 	}
 
-	public void setReciveTime(Timestamp reciveTime) {
+	public void setReciveTime(Date reciveTime) {
 		this.reciveTime = reciveTime;
 	}
 
-	public Timestamp getSendTime() {
+	public Date getSendTime() {
 		return this.sendTime;
 	}
 
-	public void setSendTime(Timestamp sendTime) {
+	public void setSendTime(Date sendTime) {
 		this.sendTime = sendTime;
 	}
 
-	public Timestamp getFeedbackTime() {
+	public Date getFeedbackTime() {
 		return this.feedbackTime;
 	}
 
-	public void setFeedbackTime(Timestamp feedbackTime) {
+	public void setFeedbackTime(Date feedbackTime) {
 		this.feedbackTime = feedbackTime;
 	}
 
