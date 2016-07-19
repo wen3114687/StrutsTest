@@ -7,12 +7,12 @@ import com.wbl.pojo.Sms;
 public class SmsAction extends BaseAction {
 	public String code;
 	public String srcMobile;
-	public String destMobile;//½ÓÊÕÊÖ»úºÅ
-	public String message;//¶ÌĞÅ
-	public String type;//ÀàĞÍ
-	public String sysName;//ÏµÍ³Ãû³Æ
-	public String status;//×´Ì¬
-	public Date reciveTime;//½ÓÊÕÊ±¼ä
+	public String destMobile;
+	public String message;
+	public String type;
+	public String sysName;
+	public String status;
+	public Date reciveTime;
 	SmsDAO smsDAO=SmsDAO.getFromApplicationContext(ctx);
 	
 	public String sendMessage() {
@@ -23,7 +23,7 @@ public class SmsAction extends BaseAction {
 		sms.setReciveTime(new Date());
 		sms.setStatus("0");
 		sms.setSysName("platform");
-		sms.setSrcMobile("¹ÜÀíÔ±");
+		sms.setSrcMobile("ç®¡ç†å‘˜");
 		sms.setType("0");
 		smsDAO.save(sms);
 		return SUCCESS;
